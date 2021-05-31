@@ -1,5 +1,5 @@
 /* HeroSearch private styles */
-.search-result li {
+li {
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
@@ -11,29 +11,27 @@
   list-style-type: none;
 }
 
-.search-result li:hover {
+li:hover {
   background-color: #607D8B;
 }
 
-.search-result li a {
+li a {
   color: #888;
   display: block;
   text-decoration: none;
 }
 
-.search-result li a:hover {
+li a:hover {
   color: white;
 }
 
-.search-result li a:active {
+li a:active {
   color: grey;
 }
 
 #search-box {
   width: 200px;
-  height: 20px;
 }
-
 
 ul.search-result {
   margin-top: 0;
