@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #b4b4b4;
+}
+
+input:focus {
+  outline: 1px solid #888;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #336699;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
