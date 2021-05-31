@@ -1,6 +1,6 @@
 # Angular Tour Of Heroes
 
-## Official Angular 2 tutorial corrected.
+Official Angular 2 tutorial corrected:
 
 Instead of hero array list, which by default starts with 11, 12, 13... it's corrected so that array will start with
 1, 2, 3...
