@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpClientModule } from '@angular/common/http';
@@ -35,7 +35,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
     MessagesComponent,
     HeroSearchComponent
   ],
-  providers: [{
+  providers: [Location, {
     provide: LocationStrategy, useClass: PathLocationStrategy
   }],
   bootstrap: [AppComponent]
