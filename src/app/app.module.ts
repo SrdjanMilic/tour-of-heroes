@@ -11,7 +11,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   imports: [
@@ -35,8 +35,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MessagesComponent,
     HeroSearchComponent
   ],
-  providers: [{
-    provide: LocationStrategy, useClass: HashLocationStrategy
+  providers: [Location, {
+    provide: LocationStrategy, useClass: PathLocationStrategy
   }],
   bootstrap: [AppComponent]
 })
