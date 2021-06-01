@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpClientModule } from '@angular/common/http';
@@ -12,6 +11,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   imports: [
@@ -35,7 +35,7 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
     MessagesComponent,
     HeroSearchComponent
   ],
-  providers: [Location, {
+  providers: [{
     provide: LocationStrategy, useClass: HashLocationStrategy
   }],
   bootstrap: [AppComponent]
